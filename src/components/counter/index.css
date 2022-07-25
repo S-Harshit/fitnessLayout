@@ -1,0 +1,36 @@
+button {
+  border: none;
+  margin: 0.2em;
+  background: var(--secondary-bg-clr);
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 0.4em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.targetCount {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+.increment {}
+
+.decrement {}
+
+@media(max-width:47em) {
+  button {
+    background-color: var(--primary-bg-clr);
+  }
+}

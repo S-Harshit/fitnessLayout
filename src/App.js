@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import Nutrition from './components/nutrition';
+import { Workout } from './components/workout';
+import { TrainerDashboard } from './pages/trainer-dashboard';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Routes>
+        <Route path="/" element={<TrainerDashboard />} />
+        <Route path="*/workout" element={<Workout />}></Route>
+        <Route path="*/nutrition" element={<Nutrition />}></Route>
+
+
+
+      </Routes>
+
+
+
+
+
+    </>
   );
 }
 

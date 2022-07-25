@@ -1,0 +1,22 @@
+.chart {
+  width: 8em;
+  padding: 0;
+  margin: 0;
+  float: left;
+  position: relative;
+
+}
+
+.chart-label {
+  position: absolute;
+  font-weight: 800;
+  top: 36%;
+  left: 35%;
+}
+
+.chart-label-two {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 0.7em;
+}

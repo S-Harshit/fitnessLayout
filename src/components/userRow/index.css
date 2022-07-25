@@ -1,0 +1,183 @@
+.userRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: content;
+  background-color: var(--primary-bg-clr);
+  margin: 1em;
+  padding: 0rem;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1em;
+}
+
+.email {
+  color: #858585
+}
+
+.userCred {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.info {
+  display: flex;
+}
+
+.workout {
+  display: flex;
+  align-items: center;
+}
+
+.nutrition {
+  display: flex;
+  align-items: center;
+
+}
+
+.nextButton {
+  background-color: var(--secondary-bg-clr);
+  color: white;
+  font-size: 1.4em;
+  height: 4em;
+  width: 1.7em;
+  border: none;
+  padding: 0.6em 0.5em 0.6em 0.5em;
+  border-radius: 0.4em;
+
+}
+
+.reminder {
+  background-color: #cc3838;
+}
+
+.shape {
+  padding: 0.2em;
+  border-radius: 0.4em;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.2em;
+  font-size: 1.2em;
+}
+
+.currentDate {
+  text-align: center;
+  border-radius: 0.4em;
+  padding: 0.3em;
+
+}
+
+.date-container {
+  margin: 0.3em 0;
+}
+
+.scheduledDate {
+  padding: 0.5em;
+  position: relative;
+  text-align: center;
+}
+
+.nutrition {
+  display: flex;
+  align-items: center;
+}
+
+.fullName {
+  font-weight: 700;
+}
+
+.notification {
+  background-color: #36f5c7;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.4em;
+  cursor: pointer;
+  color: var(--secondary-bg-clr);
+}
+
+.dp {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  float: left;
+
+}
+
+
+
+@media(max-width:55em) {
+  .userRow {
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .nutrition {
+    background-color: var(--secondary-bg-clr);
+    border-radius: 0.6em;
+    margin-bottom: 0.4em;
+    padding-top: 2em;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nextButton {
+
+    margin-right: 0.4em;
+  }
+
+  .workout {
+    position: relative;
+    background-color: var(--secondary-bg-clr);
+    margin: 0.4em;
+    padding: 0.2em;
+    width: 80%;
+    padding-top: 2em;
+    border-radius: 0.6em;
+    justify-content: center;
+  }
+
+  .workout::before {
+    position: absolute;
+    content: 'WORKOUT';
+    top: 1em;
+  }
+
+  .counter::before {
+    position: absolute;
+    content: 'STEPS';
+    top: 1em;
+  }
+
+  .nutrition::before {
+    position: absolute;
+    content: 'NUTRITION';
+    top: 1em;
+  }
+
+  .date-container {
+    margin: 0.4em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counter {
+    background-color: var(--secondary-bg-clr);
+    padding: 0.2em;
+    width: 80%;
+    margin: 0.2em;
+    margin-top: 0.4em;
+    border-radius: 0.6em;
+    justify-content: center;
+    padding-top: 2em;
+    position: relative;
+
+  }
+}

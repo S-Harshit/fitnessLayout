@@ -1,0 +1,31 @@
+.circle {
+  width: 5em;
+  height: 5em;
+  font-size: 1em;
+  position: relative;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+
+}
+
+.targetCount {
+  font-weight: 600;
+}
+
+.stepsWalked {
+  font-weight: 800;
+  margin: 0;
+}
+
+.walked {
+  font-size: 0.7em;
+}
+
+p {
+  margin: 0;
+}
